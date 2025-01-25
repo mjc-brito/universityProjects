@@ -1,0 +1,79 @@
+                              PSS(R)E Xplore-35.3.3 IEC 60909 SHORT CIRCUIT CURRENTS          THU, JAN 05 2023  12:36
+
+
+
+ OPTIONS USED:
+     - MAXIMUM FAULT CURRENT CALCULATIONS, IMPEDANCE CORRECTION FACTORS CALCULATED AND APPLIED
+     - VOLTAGE FACTOR C=1.05 WHEN BUS BASE kV<=1.0 kV and C=1.1 WHEN BUS BASE kV>1.0 kV
+     - SET SYNCHRONOUS/ASYNCHRONOUS MACHINE POWER OUTPUTS TO P=0.0, Q=0.0
+     - SET GENERATOR POSITIVE SEQUENCE REACTANCES TO SUBTRANSIENT
+     - SET INDUCTION MACHINE POSITIVE SEQUENCE REACTANCES TO SUBTRANSIENT
+     - TRANSFORMER TAP RATIOS AND PHASE SHIFT ANGLES UNCHANGED
+     - SET LINE CHARGING=0.0 IN +/- SEQUENCES
+     - SET LINE/FIXED/SWITCHED SHUNTS=0.0 AND TRANSFORMER MAGNETIZING ADMITTANCE=0.0 IN +/- SEQUENCES
+     - LOAD REPRESENTED IN +/-/0 SEQUENCES
+     - DC LINES AND FACTS DEVICES BLOCKED
+     - IMPEDANCE CORRECTIONS NOT APPLIED TO TRANSFORMER ZERO SEQUENCE IMPEDANCES
+     - NUMBER OF NON-CONVENTIONAL SOURCES [GENERATORS]=0
+     - NUMBER OF SERIES CAPACITOR BRANCHES WITH MOV PROTECTION ENABLED=0
+
+ For different fault types Total Fault Current (I"k) is determined as below:
+     3ph fault = I"k = Ia1
+     LG Fault  = I"k = Ia = 3*Ia0
+     LLG Fault = I"k = Ib + Ic = 3*Ia0 = 2Ia0 - (Ia1+Ia2)
+     LL Fault  = I"k = Ib = -Ic = a^2*Ia1 + a*Ia2
+
+ SCMVA = PU MVA * SBASE = sqrt(3) * I"k (in kA) * bus base kV     [where SBASE=100.0 MVA]
+
+ AT BUS    216     [RIO MAIOR 2 220.00] AREA    1  *** FAULTED BUS IS:    216     [RIO MAIOR 2 220.00] ***   0 LEVELS AWAY ***
+ PRE  FAULT (PU)  VA:1.1000+j0.0000
+ POST FAULT (PU)  V+:0.0000+j0.0000  VA:0.0000+j0.0000  VB:0.0000+j0.0000  VC:0.0000+j0.0000
+ THEVENIN IMPEDANCE, X/R  (PU)  Z+:0.003640+j0.421098, 115.70068
+                                                  X----------------------------------------THREE PHASE FAULT---------------------------------------X
+ X----------- FROM ------------X AREA CKT I/Z       RE(I+)   IM(I+)   RE(IA)   IM(IA)   RE(IB)   IM(IB)   RE(IC)   IM(IC)   RE(Z+)   IM(Z+)  APP X/R
+    206     [PEREIROS    220.00]    1 1   PU/PU     0.0368  -0.4142   0.0368  -0.4142  -0.3771   0.1752   0.3403   0.2390 0.217437 2.543100 11.69578
+    206     [PEREIROS    220.00]    1 2   PU/PU     0.0329  -0.3918   0.0329  -0.3918  -0.3558   0.1674   0.3229   0.2244 0.216781 2.690477 12.41106
+    416     [RIO MAIOR   400.00]    1 1   PU/PU    -0.0236  -0.9064  -0.0236  -0.9064  -0.7731   0.4736   0.7967   0.4327 -0.03347 1.091581 32.61736
+    416     [RIO MAIOR   400.00]    1 2   PU/PU    -0.0236  -0.8997  -0.0236  -0.8997  -0.7673   0.4702   0.7909   0.4294 -0.03385 1.099715 32.48882
+    901     [RIO MAIOR 6060.000]    1 1   PU/PU     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000 0.000000 0.000000  0.00000
+    901     [RIO MAIOR 6060.000]    1 2   PU/PU     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000 0.000000 0.000000  0.00000
+    901     [RIO MAIOR 6060.000]    1 3   PU/PU     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000 0.000000 0.000000  0.00000
+ TO FIXED SHUNT                       1   PU/PU     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ INITIAL SYM. S.C. CURRENT(I''k)(RMS)     PU        0.0226  -2.6120   0.0226  -2.6120  -2.2734   1.2865   2.2508   1.3256
+                       I''k (MAG/ANG)     PU        2.6121   -89.50   2.6121   -89.50   2.6121   150.50   2.6121    30.50
+ ---------------------------------------------------------------------------------------------------------------------------------------------------
+ AT BUS    206     [PEREIROS    220.00] AREA    1  *** FAULTED BUS IS:    216     [RIO MAIOR 2 220.00] ***   1 LEVELS AWAY ***
+ POST FAULT (PU)  V+:0.0387-j0.0036  VA:0.0387-j0.0036  VB:-0.0225-j0.0317  VC:-0.0162+j0.0353
+                                                  X----------------------------------------THREE PHASE FAULT---------------------------------------X
+ X----------- FROM ------------X AREA CKT I/Z       RE(I+)   IM(I+)   RE(IA)   IM(IA)   RE(IB)   IM(IB)   RE(IC)   IM(IC)   RE(Z+)   IM(Z+)  APP X/R
+    216     [RIO MAIOR 2 220.00]    1 1   PU/PU    -0.0368   0.4142  -0.0368   0.4142   0.3771  -0.1752  -0.3403  -0.2390 -0.23440-2.634950 11.24138
+    216     [RIO MAIOR 2 220.00]    1 2   PU/PU    -0.0329   0.3918  -0.0329   0.3918   0.3558  -0.1674  -0.3229  -0.2244 -0.23424-2.787697 11.90100
+    276     [PARAIMO     220.00]    1 1   PU/PU    -0.0023  -0.3022  -0.0023  -0.3022  -0.2606   0.1531   0.2629   0.1492 -0.04512 3.474135 77.00352
+    276     [PARAIMO     220.00]    1 2   PU/PU    -0.0026  -0.3020  -0.0026  -0.3020  -0.2602   0.1533   0.2628   0.1487 -0.04944 3.477019 70.33474
+   1701     [PEREIROS 60 60.000]    1 1   PU/PU     0.0293  -0.0777   0.0293  -0.0777  -0.0819   0.0135   0.0526   0.0642 4.46604911.864470  2.65659
+   1701     [PEREIROS 60 60.000]    1 2   PU/PU     0.0267  -0.0725   0.0267  -0.0725  -0.0761   0.0131   0.0494   0.0594 4.70711012.790417  2.71725
+   1701     [PEREIROS 60 60.000]    1 3   PU/PU     0.0186  -0.0516   0.0186  -0.0516  -0.0540   0.0097   0.0354   0.0419 6.49039818.043505  2.78003
+ TO FIXED SHUNT                       1   PU/PU     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ ---------------------------------------------------------------------------------------------------------------------------------------------------
+ AT BUS    416     [RIO MAIOR   400.00] AREA    1  *** FAULTED BUS IS:    216     [RIO MAIOR 2 220.00] ***   1 LEVELS AWAY ***
+ POST FAULT (PU)  V+:0.1098-j0.0045  VA:0.1098-j0.0045  VB:-0.0589-j0.0929  VC:-0.0510+j0.0974
+                                                  X----------------------------------------THREE PHASE FAULT---------------------------------------X
+ X----------- FROM ------------X AREA CKT I/Z       RE(I+)   IM(I+)   RE(IA)   IM(IA)   RE(IB)   IM(IB)   RE(IC)   IM(IC)   RE(Z+)   IM(Z+)  APP X/R
+    216     [RIO MAIOR 2 220.00]    1 1   PU/PU     0.0236   0.9064   0.0236   0.9064   0.7731  -0.4736  -0.7967  -0.4327 0.031619-1.212821 38.35739
+    216     [RIO MAIOR 2 220.00]    1 2   PU/PU     0.0236   0.8997   0.0236   0.8997   0.7673  -0.4702  -0.7909  -0.4294 0.032003-1.221859 38.17979
+    448     [LAVOS       400.00]    1 1   PU/PU    -0.0472  -1.8060  -0.0472  -1.8060  -1.5405   0.9439   1.5876   0.8621 -0.01843 0.529826 28.75063
+ TO FIXED SHUNT                       1   PU/PU     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000
+ ---------------------------------------------------------------------------------------------------------------------------------------------------
+ AT BUS    901     [RIO MAIOR 6060.000] AREA    1  *** FAULTED BUS IS:    216     [RIO MAIOR 2 220.00] ***   1 LEVELS AWAY ***
+ POST FAULT (PU)  V+:0.0000+j0.0000  VA:0.0000+j0.0000  VB:0.0000+j0.0000  VC:0.0000+j0.0000
+                                                  X----------------------------------------THREE PHASE FAULT---------------------------------------X
+ X----------- FROM ------------X AREA CKT I/Z       RE(I+)   IM(I+)   RE(IA)   IM(IA)   RE(IB)   IM(IB)   RE(IC)   IM(IC)   RE(Z+)   IM(Z+)  APP X/R
+    216     [RIO MAIOR 2 220.00]    1 1   PU/PU     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000 0.000000 0.000000  0.00000
+    216     [RIO MAIOR 2 220.00]    1 2   PU/PU     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000 0.000000 0.000000  0.00000
+    216     [RIO MAIOR 2 220.00]    1 3   PU/PU     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000 0.000000 0.000000  0.00000
+   1001     [R MAIOR     60.000]    1 1   PU/PU     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000 0.000000 0.000000  0.00000
+   1201     [SANCHEIRA   60.000]    1 1   PU/PU     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000 0.000000 0.000000  0.00000
+   1201     [SANCHEIRA   60.000]    1 2   PU/PU     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000 0.000000 0.000000  0.00000
+   1301     [CALDAS      60.000]    1 1   PU/PU     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000 0.000000 0.000000  0.00000
+   1601     [TURQUEL     60.000]    1 1   PU/PU     0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000 0.000000 0.000000  0.00000
+ ---------------------------------------------------------------------------------------------------------------------------------------------------

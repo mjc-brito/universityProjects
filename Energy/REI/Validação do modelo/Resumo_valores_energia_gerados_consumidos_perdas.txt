@@ -1,0 +1,12 @@
+  PTI INTERACTIVE POWER SYSTEM SIMULATOR--PSS(R)E Xplore TUE, JAN 03 2023  13:46
+                                                                     AREA TOTALS
+                                                                      IN MW/MVAR
+                 FROM ------AT AREA BUSES-------              TO            TO XFRMR                   -NET INTERCHANGE-
+                GENE- FROM IND   TO IND       TO   TO BUS  GNE BUS  TO LINE  MAGNE-      FROM     TO     TO TIE  TO TIES  DESIRED
+ X-- AREA --X  RATION GENERATN   MOTORS     LOAD    SHUNT  DEVICES    SHUNT   TIZING CHARGING   LOSSES    LINES  + LOADS  NET INT
+
+    1             1.5      0.0      0.0      0.0      0.0      0.0      0.0      0.8      0.0      0.7      0.0      0.0      0.0
+                -27.7      0.0      0.0      0.0    119.7      0.0     -0.0      2.8    157.3      7.2      0.0      0.0
+
+ COLUMN           1.5      0.0      0.0      0.0      0.0      0.0      0.0      0.8      0.0      0.7      0.0      0.0      0.0
+ TOTALS         -27.7      0.0      0.0      0.0    119.7      0.0      0.0      2.8    157.3      7.2      0.0      0.0

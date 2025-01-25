@@ -1,0 +1,51 @@
+/PSS(R)E 35
+COM
+COM SUBSYSTEM description file entry created by PSS(R)E Config File Builder
+COM
+SUBSYSTEM 'FULL'
+   BUS 101
+   BUS 102
+   BUS 201
+   BUS 202
+   BUS 203
+   BUS 206
+   BUS 216
+   BUS 276
+   BUS 301
+   BUS 302
+   BUS 303
+   BUS 401
+   BUS 402
+   BUS 416
+   BUS 448
+   BUS 476
+   BUS 501
+   BUS 502
+   BUS 601
+   BUS 701
+   BUS 702
+   BUS 801
+   BUS 901
+   BUS 902
+   BUS 1001
+   BUS 1002
+   BUS 1101
+   BUS 1201
+   BUS 1202
+   BUS 1301
+   BUS 1302
+   BUS 1401
+   BUS 1402
+   BUS 1501
+   BUS 1502
+   BUS 1601
+   BUS 1602
+   BUS 1701
+   BUS 1702
+   BUS 1801
+   BUS 1901
+   BUS 2001
+   BUS 2101
+   BUS 2201
+END
+END

@@ -1,0 +1,419 @@
+                              PSS(R)E Xplore-35.3.3 IEC 60909 SHORT CIRCUIT CURRENTS          THU, JAN 05 2023  12:28
+
+
+
+ OPTIONS USED:
+     - MAXIMUM FAULT CURRENT CALCULATIONS, IMPEDANCE CORRECTION FACTORS CALCULATED AND APPLIED
+     - VOLTAGE FACTOR C=1.05 WHEN BUS BASE kV<=1.0 kV and C=1.1 WHEN BUS BASE kV>1.0 kV
+     - SET SYNCHRONOUS/ASYNCHRONOUS MACHINE POWER OUTPUTS TO P=0.0, Q=0.0
+     - SET GENERATOR POSITIVE SEQUENCE REACTANCES TO SUBTRANSIENT
+     - SET INDUCTION MACHINE POSITIVE SEQUENCE REACTANCES TO SUBTRANSIENT
+     - TRANSFORMER TAP RATIOS AND PHASE SHIFT ANGLES UNCHANGED
+     - SET LINE CHARGING=0.0 IN +/- SEQUENCES
+     - SET LINE/FIXED/SWITCHED SHUNTS=0.0 AND TRANSFORMER MAGNETIZING ADMITTANCE=0.0 IN +/- SEQUENCES
+     - LOAD REPRESENTED IN +/-/0 SEQUENCES
+     - DC LINES AND FACTS DEVICES BLOCKED
+     - IMPEDANCE CORRECTIONS NOT APPLIED TO TRANSFORMER ZERO SEQUENCE IMPEDANCES
+     - NUMBER OF NON-CONVENTIONAL SOURCES [GENERATORS]=0
+     - NUMBER OF SERIES CAPACITOR BRANCHES WITH MOV PROTECTION ENABLED=0
+
+ For different fault types Total Fault Current (I"k) is determined as below:
+     3ph fault = I"k = Ia1
+     LG Fault  = I"k = Ia = 3*Ia0
+     LLG Fault = I"k = Ib + Ic = 3*Ia0 = 2Ia0 - (Ia1+Ia2)
+     LL Fault  = I"k = Ib = -Ic = a^2*Ia1 + a*Ia2
+
+ SCMVA = PU MVA * SBASE = sqrt(3) * I"k (in kA) * bus base kV     [where SBASE=100.0 MVA]
+
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    101     [ALEGRIA     60.000]  LG       1.10    0.1960  -1.0855    0.5068  -2.8073    0.4188  -2.3195     0.0025    1.1031    1.1031
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.104384+j0.638364, 6.11556  Z-:0.104384+j0.638364, 6.11556  Z0:0.322785+j1.667366, 5.16556
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    102     [ALFARELOS   60.000]  LG       1.07    0.1959  -1.0489    0.5034  -2.6945    0.4166  -2.2301     0.0021    1.0670    1.0670
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.111979+j0.658505, 5.88062  Z-:0.111979+j0.658505, 5.88062  Z0:0.343967+j1.723046, 5.00933
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    201     [LAVOS 60    60.000]  LG       0.65    0.2008  -0.6156    0.4533  -1.3900    0.3841  -1.1778     0.0000    0.6475    0.6475
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.001641+j0.415379, 253.17682  Z-:0.001641+j0.415379, 253.17682  Z0:1.576949+j4.014474, 2.54572
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    202     [ANTANHOL    60.000]  LG       1.19    0.1881  -1.1796    0.4979  -3.1219    0.4103  -2.5730     0.0057    1.1945    1.1945
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.084267+j0.593647, 7.04482  Z-:0.084267+j0.593647, 7.04482  Z0:0.266542+j1.540969, 5.78133
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    203     [TAVEIRO     60.000]  LG       0.70    0.1949  -0.6679    0.4528  -1.5516    0.3804  -1.3036     0.0000    0.6958    0.6958
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.261979+j0.958505, 3.65871  Z-:0.261979+j0.958505, 3.65871  Z0:0.804669+j2.635901, 3.27576
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    206     [PEREIROS    220.00]  LG       1.72    0.0392  -1.7170    0.1072  -4.6990    0.1012  -4.4366     1.5638    1.7174    2.3227
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.006956+j0.429980, 61.81504  Z-:0.006956+j0.429980, 61.81504  Z0:0.029904+j1.061017, 35.48050
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    216     [RIO MAIOR 2 220.00]  LG       1.78    0.0238  -1.7779    0.0661  -4.9316    0.0622  -4.6371     1.9877    1.7781    2.6669
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.003640+j0.421098, 115.70068  Z-:0.003640+j0.421098, 115.70068  Z0:0.017593+j1.013562, 57.61007
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    276     [PARAIMO     220.00]  LG       1.74    0.0297  -1.7414    0.0821  -4.8047    0.0773  -4.5259     1.8894    1.7416    2.5696
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.006471+j0.433733, 67.02546  Z-:0.006471+j0.433733, 67.02546  Z0:0.019423+j1.027060, 52.87851
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    301     [GALA        60.000]  LG       0.74    0.2116  -0.7137    0.4895  -1.6513    0.4120  -1.3901     0.0000    0.7444    0.7444
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.101478+j0.600421, 5.91675  Z-:0.101478+j0.600421, 5.91675  Z0:1.056996+j3.049637, 2.88519
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    302     [CORRENTE    60.000]  LG       1.19    0.1881  -1.1796    0.4979  -3.1219    0.4103  -2.5730     0.0057    1.1945    1.1945
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.084267+j0.593647, 7.04482  Z-:0.084267+j0.593647, 7.04482  Z0:0.266542+j1.540969, 5.78133
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    303     [ALTO S.JOÃO 60.000]  LG       1.10    0.1960  -1.0855    0.5068  -2.8073    0.4188  -2.3195     0.0025    1.1031    1.1031
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.104384+j0.638364, 6.11556  Z-:0.104384+j0.638364, 6.11556  Z0:0.322785+j1.667366, 5.16556
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    401     [LOURIÇAL    60.000]  LG       0.49    0.1685  -0.4565    0.3683  -0.9977    0.3138  -0.8501     0.0000    0.4867    0.4867
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.151641+j0.715379, 4.71759  Z-:0.151641+j0.715379, 4.71759  Z0:2.045189+j4.930532, 2.41080
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    402     [RELVINHA    60.000]  LG       1.15    0.2057  -1.1271    0.5309  -2.9086    0.4377  -2.3981     0.0021    1.1457    1.1457
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.098792+j0.612039, 6.19520  Z-:0.098792+j0.612039, 6.19520  Z0:0.319582+j1.609440, 5.03609
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    416     [RIO MAIOR   400.00]  LG       1.93    0.0195  -1.9314    0.0544  -5.3829    0.0508  -5.0289     2.2514    1.9315    2.9664
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.001513+j0.383379, 253.33325  Z-:0.001513+j0.383379, 253.33325  Z0:0.014228+j0.941681, 66.18379
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    448     [LAVOS       400.00]  LG       2.09    0.0056  -2.0934    0.0158  -5.9211    0.0146  -5.4736     2.9604    2.0934    3.6258
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:-0.00000+j0.366667, 9999.999  Z-:-0.00000+j0.366667, 9999.999  Z0:0.004206+j0.843009, 200.43820
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    476     [PARAIMO     400.00]  LG       2.08    0.0177  -2.0806    0.0499  -5.8848    0.0458  -5.4027     2.5102    2.0807    3.2604
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.001169+j0.367891, 314.75888  Z-:0.001169+j0.367891, 314.75888  Z0:0.011120+j0.850201, 76.45683
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    501     [SOURE       60.000]  LG       0.49    0.1685  -0.4565    0.3683  -0.9977    0.3138  -0.8501     0.0000    0.4867    0.4867
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.151641+j0.715379, 4.71759  Z-:0.151641+j0.715379, 4.71759  Z0:2.045189+j4.930532, 2.41080
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    502     [CONDEIXA    60.000]  LG       0.91    0.2043  -0.8875    0.5020  -2.1814    0.4175  -1.8141     0.0004    0.9107    0.9107
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.161979+j0.758505, 4.68274  Z-:0.161979+j0.758505, 4.68274  Z0:0.488745+j2.014271, 4.12132
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    601     [VILA ROBIM  60.000]  LG       0.97    0.2148  -0.9482    0.5298  -2.3390    0.4410  -1.9472     0.0004    0.9722    0.9722
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.104924+j0.614797, 5.85943  Z-:0.104924+j0.614797, 5.85943  Z0:0.539923+j2.080851, 3.85398
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    701     [SÃO JULIÃO  60.000]  LG       0.65    0.1952  -0.6235    0.4454  -1.4229    0.3753  -1.1989     0.0000    0.6534    0.6534
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.254924+j0.914797, 3.58850  Z-:0.254924+j0.914797, 3.58850  Z0:0.999103+j2.990535, 2.99322
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    702     [LOUSÃ       60.000]  LG       0.91    0.2050  -0.8835    0.5029  -2.1678    0.4187  -1.8046     0.0004    0.9070    0.9070
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.161979+j0.758505, 4.68274  Z-:0.161979+j0.758505, 4.68274  Z0:0.498295+j2.027241, 4.06836
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    801     [MIRANDA CORV60.000]  LG       0.62    0.1861  -0.5948    0.4247  -1.3574    0.3581  -1.1445     0.0000    0.6232    0.6232
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.311979+j1.058505, 3.39287  Z-:0.311979+j1.058505, 3.39287  Z0:0.957166+j2.936778, 3.06820
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    901     [RIO MAIOR 6060.000]  LG       1.67    0.0238  -1.6683    0.0674  -4.7187    0.0624  -4.3647     1.7768    1.6685    2.4374
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.004681+j0.459968, 98.25514  Z-:0.004681+j0.459968, 98.25514  Z0:0.018895+j1.057718, 55.97725
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+    902     [PC PENACOVA 60.000]  LG       1.05    0.2115  -1.0294    0.5328  -2.5935    0.4405  -2.1442     0.0009    1.0509    1.0509
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.122601+j0.661927, 5.39905  Z-:0.122601+j0.661927, 5.39905  Z0:0.386713+j1.752127, 4.53083
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+   1001     [R MAIOR     60.000]  LG       1.06    0.1947  -1.0433    0.5002  -2.6807    0.4129  -2.2130     0.0016    1.0613    1.0613
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.110564+j0.671733, 6.07553  Z-:0.110564+j0.671733, 6.07553  Z0:0.349194+j1.713271, 4.90635
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+   1002     [AGUIEIRA    60.000]  LG       0.92    0.2223  -0.8965    0.5372  -2.1661    0.4464  -1.8000     0.0002    0.9236    0.9236
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.165813+j0.738944, 4.45650  Z-:0.165813+j0.738944, 4.45650  Z0:0.528376+j1.989960, 3.76618
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+   1101     [CADAVAL     60.000]  LG       1.00    0.2002  -0.9765    0.5046  -2.4613    0.4179  -2.0380     0.0008    0.9968    0.9968
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.128211+j0.707027, 5.51457  Z-:0.128211+j0.707027, 5.51457  Z0:0.408515+j1.828972, 4.47712
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+   1201     [SANCHEIRA   60.000]  LG       1.29    0.1568  -1.2826    0.4334  -3.5441    0.3563  -2.9134     0.0209    1.2922    1.2923
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.057623+j0.565851, 9.81995  Z-:0.057623+j0.565851, 9.81995  Z0:0.194753+j1.403272, 7.20539
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+   1202     [MORTAGUA    60.000]  LG       1.01    0.2261  -0.9799    0.5553  -2.4074    0.4600  -1.9940     0.0003    1.0057    1.0057
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.141615+j0.689555, 4.86922  Z-:0.141615+j0.689555, 4.86922  Z0:0.454356+j1.818324, 4.00198
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+   1301     [CALDAS      60.000]  LG       1.13    0.1863  -1.1151    0.4889  -2.9265    0.4027  -2.4104     0.0033    1.1305    1.1305
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.092917+j0.636439, 6.84957  Z-:0.092917+j0.636439, 6.84957  Z0:0.295126+j1.606209, 5.44246
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+   1302     [MOGOFORES   60.000]  LG       1.45    0.1694  -1.4356    0.4705  -3.9873    0.3847  -3.2602     0.0250    1.4455    1.4458
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.050007+j0.513761, 10.27367  Z-:0.050007+j0.513761, 10.27367  Z0:0.167527+j1.239641, 7.39967
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+   1401     [SANTO O     60.000]  LG       0.93    0.2035  -0.9120    0.5036  -2.2572    0.4183  -1.8747     0.0004    0.9344    0.9344
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.147623+j0.745851, 5.05242  Z-:0.147623+j0.745851, 5.05242  Z0:0.473798+j1.955168, 4.12659
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+   1402     [PARAIMO 60  60.000]  LG       1.83    0.0203  -1.8253    0.0574  -5.1628    0.0531  -4.7759     2.1503    1.8254    2.8206
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.004142+j0.436750, 105.43835  Z-:0.004142+j0.436750, 105.43835  Z0:0.011805+j0.934177, 79.13258
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+   1501     [ATOUGUIA    60.000]  LG       1.03    0.1984  -1.0102    0.5045  -2.5692    0.4176  -2.1265     0.0011    1.0295    1.0295
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.117623+j0.685851, 5.83094  Z-:0.117623+j0.685851, 5.83094  Z0:0.382408+j1.773560, 4.63787
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+   1502     [BUSTOS      60.000]  LG       1.08    0.2186  -1.0561    0.5499  -2.6566    0.4551  -2.1986     0.0008    1.0785    1.0785
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.121142+j0.668744, 5.52034  Z-:0.121142+j0.668744, 5.52034  Z0:0.377887+j1.658780, 4.38962
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+   1601     [TURQUEL     60.000]  LG       0.92    0.2033  -0.8977    0.5016  -2.2145    0.4163  -1.8380     0.0003    0.9205    0.9205
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.154681+j0.759968, 4.91312  Z-:0.154681+j0.759968, 4.91312  Z0:0.482588+j1.976551, 4.09573
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+   1602     [MIRA        60.000]  LG       0.91    0.2223  -0.8808    0.5349  -2.1197    0.4459  -1.7673     0.0002    0.9084    0.9084
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.172666+j0.769878, 4.45878  Z-:0.172666+j0.769878, 4.45878  Z0:0.543413+j1.982413, 3.64807
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+   1701     [PEREIROS 60 60.000]  LG       1.63    0.0467  -1.6284    0.1319  -4.6059    0.1203  -4.1992     1.4290    1.6291    2.1670
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.011979+j0.458505, 38.27593  Z-:0.011979+j0.458505, 38.27593  Z0:0.034050+j1.107831, 32.53522
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+   1702     [CANTANHEDE  60.000]  LG       1.27    0.2016  -1.2495    0.5323  -3.3004    0.4378  -2.7141     0.0048    1.2657    1.2657
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.079285+j0.579569, 7.30991  Z-:0.079285+j0.579569, 7.30991  Z0:0.256618+j1.414868, 5.51353
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+   1801     [TOCHA       60.000]  LG       0.78    0.2144  -0.7470    0.5002  -1.7424    0.4192  -1.4603     0.0000    0.7772    0.7772
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.229285+j0.879569, 3.83613  Z-:0.229285+j0.879569, 3.83613  Z0:0.713012+j2.322190, 3.25687
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+   1901     [PAMPILHOSA  60.000]  LG       1.08    0.2221  -1.0591    0.5572  -2.6567    0.4600  -2.1930     0.0007    1.0822    1.0822
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.119777+j0.645269, 5.38725  Z-:0.119777+j0.645269, 5.38725  Z0:0.386411+j1.693983, 4.38389
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+   2001     [PC CANTANHED60.000]  LG       0.95    0.2235  -0.9218    0.5430  -2.2390    0.4519  -1.8634     0.0002    0.9485    0.9485
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.158713+j0.740153, 4.66346  Z-:0.158713+j0.740153, 4.66346  Z0:0.502500+j1.900742, 3.78257
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+   2101     [PC SANTA CLA60.000]  LG       1.07    0.1964  -1.0471    0.5042  -2.6877    0.4175  -2.2255     0.0020    1.0654    1.0654
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.111979+j0.658505, 5.88062  Z-:0.111979+j0.658505, 5.88062  Z0:0.347158+j1.727375, 4.97575
+
+ ---------------------------------------------------------------------------------------------------------------
+     VOLTAGE FACTOR C= 1.10,   NOMINAL FREQUENCY=50.0 Hz,   BREAKING CURRENT at TIME= 0.100 seconds
+                                       <-SCMVA-> <-Sym I''k rms--> <-----ip(B)------> <-----ip(C)------> <DC Ib(C)> <Sym Ib-> <Asym Ib>
+                                                    RE(I)    IM(I)     RE(I)    IM(I)     RE(I)    IM(I)        /I/       /I/       /I/
+ X------------ BUS ------------X          PU            PU                 PU                 PU                PU        PU        PU
+   2201     [CELA        60.000]  LG       0.63    0.1863  -0.6015    0.4263  -1.3764    0.3589  -1.1585     0.0000    0.6297    0.6297
+ Note - ip(B) currents include safety factor multiplier (1.15).
+ THEVENIN IMPEDANCE, X/R  (PU)     Z+:0.304681+j1.059968, 3.47894  Z-:0.304681+j1.059968, 3.47894  Z0:0.941274+j2.885895, 3.06595
+
+ ---------------------------------------------------------------------------------------------------------------
