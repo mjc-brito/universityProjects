@@ -1,0 +1,15 @@
+﻿  game.cpp
+  my_interaction_functions.cpp
+  labwork1.cpp
+C:\str\labwork1\labwork1.cpp(18,1): warning C4005: 'portMAX_DELAY': macro redefinition
+C:\str\FreeRTOS\include\portmacro.h(57): message : see previous definition of 'portMAX_DELAY'
+C:\str\labwork1\labwork1.cpp(74,4): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+C:\str\labwork1\labwork1.cpp(74,12): error C2065: 'NOP': undeclared identifier
+C:\str\labwork1\labwork1.cpp(74,16): error C2143: syntax error: missing ';' before '}'
+C:\str\labwork1\labwork1.cpp(75,4): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+C:\str\labwork1\labwork1.cpp(75,12): error C2065: 'NOP': undeclared identifier
+C:\str\labwork1\labwork1.cpp(75,16): error C2143: syntax error: missing ';' before '}'
+C:\str\labwork1\labwork1.cpp(167,12): warning C4553: '==': result of expression not used; did you intend '='?
+C:\str\labwork1\labwork1.cpp(170,12): warning C4553: '==': result of expression not used; did you intend '='?
+C:\str\labwork1\labwork1.cpp(171,12): warning C4553: '==': result of expression not used; did you intend '='?
+  Generating Code...
